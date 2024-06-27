@@ -1,0 +1,176 @@
+
+
+@import url(https://fonts.bunny.net/css?family=aguafina-script:400);
+*{
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* ich will das font von bootstrap (system-ui), und finde Segoe UI auch gut. Die anderen lasse ich stehen falls andere Leute die fonts (in weißem Text) haben */
+
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(250, 250, 220, 0.6), rgb(124, 203, 230, .7)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
+    height: 100vh;
+    /* position: relative; */
+}
+header {
+    background: linear-gradient(-45deg, rgb(250, 250, 220,.3),rgb(124, 203, 230, .3));
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 4rem;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom: .3px solid darkslateblue;
+
+}
+span {
+    font-family: 'Aguafina Script', handwriting;
+    /* font-size: xx-large; */
+    color: rgb(4, 4, 71);
+    font-weight: bold;
+}
+
+
+header span {
+    /* font-family: 'Aguafina Script', handwriting; */
+    font-size: xx-large;
+    /* color: rgb(4, 4, 71); */
+}
+
+h1 {
+    color: rgb(4, 4, 71);
+    display: block;
+    position: fixed;
+    top: 22px;
+    left: 120px;
+
+}
+nav{
+    display: flex;
+    gap: 1.2rem;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: .7rem;
+    /* padding-left: 40px; */
+    border-bottom: .5px solid darkslateblue;
+
+    
+
+}
+nav li {
+    list-style: none;
+    color: rgb(32, 19, 119);
+    /* transition-duration: .6s; */
+    /* transition-delay: 2s; */
+    transition: all;
+}
+nav li:hover {
+    background-color: rgba(228, 237, 245, 0.27);
+    border-left: 1px solid darkslateblue;
+    border-bottom: 1px solid darkslateblue;
+
+    padding: 3px;
+    color: rgb(27, 19, 83);
+    font-weight: bold;
+    text-decoration: underline rgb(78, 19, 78, .4);
+    transform: translateY(3px) translateX(-3px) scale(1.1);
+    border-radius: 5px;
+
+}
+
+main {
+    /* margin-top: 170px; */
+    /* margin top weg, bei table (absolute) angewandt. So klappt es, mit position relative hier und absolute bei table, exI, Konzept usw */
+    position: relative;
+    top: 170px;
+    left: 15px;
+}
+
+.concept {
+    background-image: ;
+}
+
+/* AufgabenListe */
+/* main relative gemacht, table absolute; sonst rutscht die tabelle unter den header beim scrollen. Nachteil: der Hintergrund scrollt jetzt nicht mehr (parallax effect).... */
+/* table {
+    position: absolute;
+
+    fortschreitender Einsicht: table braucht nicht absolute. Einfach bei MAIN, EINMAL position top 170px left 15px gegeben. Dann fängt der Inhalt auf jeder Seite unter dem Header - mit Luft - an.
+
+} */
+table *{
+    padding: 3px 20px;
+}
+
+table, th {
+    margin: 0 auto;
+    border-bottom: 1px solid darkslateblue;
+    /* column-gap: 100px; */
+}
+tbody tr td:nth-child(1) {
+    border-right: 1px solid darkslategray;
+
+    border-bottom: 1px solid darkslategray;
+    font-weight: bold;
+    padding: auto 0;
+}
+td:nth-child(5) {
+    border-left: 1px solid darkslategray;
+    background: #ffffff70; 
+    /* background: rgba(124, 203, 230, .3); */
+
+    /* border-bottom: 1px solid darkslategray; */
+    font-weight: bold;
+    /* max-height: 5rem; */
+    /* max-width: fit-content; */
+
+    /* padding: 0;
+    max-width: 200px;
+    min-height: 4rem; */
+}
+
+
+/* Pause */
+img {    
+    width: 15%;
+    /* height: auto; */
+    margin-left: 75px;
+    }
+
+.exI {
+    margin-top: 50px;
+    /* hier auch wieder margin zu fixed header geben, sonst rutscht es durcheinander */
+    /* fortschreitender Einsicht: top 170px left 15px EINMAL bei MAIN geben ;-) */
+
+    border: 1px solid darkslateblue;
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    box-sizing: border-box;
+
+    background-color: white;
+    background-image: url(./src/Pause-Übung-I_farblich.excalidraw.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding-top: 270px;
+    padding-left: 55px;
+
+    box-shadow: 2px 3px 5px rgba(138, 78, 78, 0.5);
+
+    align-items: end;
+
+    transition-property: all;
+    transition-duration: 1s;
+}
+.exI:hover {
+    transform: scale(1.2);
+    translate: 40px;
+
+}
