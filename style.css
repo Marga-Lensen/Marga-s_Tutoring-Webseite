@@ -1,6 +1,10 @@
 
 
-@import url(https://fonts.bunny.net/css?family=aguafina-script:400);
+/* @import url(https://fonts.bunny.net/css?family=aguafina-script:400);
+@import url(https://fonts.bunny.net/css?family=aguafina-script:400|akronim:400);
+@import url(https://fonts.bunny.net/css?family=aguafina-script:400|akaya-kanadaka:400|akronim:400); */
+@import url(https://fonts.bunny.net/css?family=aguafina-script:400|akaya-kanadaka:400|akronim:400|alex-brush:400);
+
 *{
     /* padding: 0; */
     margin: 0;
@@ -31,6 +35,9 @@ header {
 }
 span {
     font-family: 'Aguafina Script', handwriting;
+    /* font-family: 'Alex Brush', handwriting; */
+    /* font-family: 'Akaya Kanadaka', display; */
+
     /* font-size: xx-large; */
     color: rgb(4, 4, 71);
     font-weight: bold;
@@ -41,14 +48,19 @@ header span {
     /* font-family: 'Aguafina Script', handwriting; */
     font-size: xx-large;
     /* color: rgb(4, 4, 71); */
+    /* border: 1px solid rgb(0, 139, 139); */
 }
 
 h1 {
     color: rgb(4, 4, 71);
+    font-family: 'Aguafina Script', handwriting;
+    font-family: 'Akronim', display;
+    font-family: 'Akaya Kanadaka', display;
+    font-size: 36px;
     display: block;
     position: fixed;
-    top: 22px;
-    left: 120px;
+    top: 20px;
+    left: 150px;
 
 }
 nav{
