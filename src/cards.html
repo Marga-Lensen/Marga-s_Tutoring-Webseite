@@ -1,0 +1,177 @@
+responsive-layout/flexbox/livecoding/flexbox-cards.html
+achampih committed Jun 3, 2024
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        article {
+            width: 20%;
+            background: #f0f8ea;
+            border: 1px solid #ccc;
+            margin-bottom: 50px;
+            border-radius: 10px;
+
+        }
+
+        .card-header {
+            text-align: center;
+            padding: 50px 10px;
+            /* interessant */
+            background: linear-gradient(to right, #00b894, #00cec9);
+
+            background: linear-gradient(to right, #00b894, #00cec9, #00b894);
+
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .card-body .btn {
+            display: block;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(to right, #00b894, #00cec9);
+            /* Gradient green colors */
+            margin-top: 30px;
+            text-decoration: none;
+            padding: 10px 5px;
+            border-radius: 5px;
+        }
+
+        /* Desktop view  */
+        @media screen and (max-width:1000px) {
+            article {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width:620px) {
+            article {
+                width: 80%;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .heading {
+                padding: 15px;
+                font-size: 20px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Responsive Flexbox Cards</h1>
+        </div>
+        <div class="row"> <!-- flexbox container-->
+
+            <article>
+                <div class="card-header">
+                    <h1>Node.js</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo
+                        mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h1>Python</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo
+                        mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h1>Ruby</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo
+                        mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </article>
+            <article>
+                <div class="card-header">
+                    <h1>Java</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo
+                        mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>
+0 comments on commit b0ec48b
+@Marga-Lensen
+Comment
+
+Leave a comment
+Loading
+Footer
+© 2024 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact
+
+Copied!
