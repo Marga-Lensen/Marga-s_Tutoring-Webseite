@@ -83,11 +83,14 @@ nav li {
 nav a {
     text-decoration: none;
     color: rgb(28, 34, 68);
+    color: rgb(32, 19, 119);
     font-weight: 400;
 }
  a:hover {
     font-weight: 600;
-    /* color: rgb(32, 19, 119); */
+    color: rgb(32, 19, 119);
+    color: rgb(28, 34, 68);
+
     /* font-size: .9em; */
 
  }
