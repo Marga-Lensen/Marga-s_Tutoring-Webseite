@@ -111,15 +111,20 @@ nav li:hover {
     min-width: 120px;
     height: auto;
     /* border: 1px solid darkslategrey; */
-    border-radius: 8px;
-    /* position: absolute;
-    top: 30px;
-    right: 40px; */
+    border-radius: 15px 20px 0 0;
+    background-color: rgba(24, 74, 124, 0.212);
+
+    
     background-image: url(./src/learning-doing.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 5px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* position: absolute; */
+    -bottom: -80px;
+    /* right: 40px; */
 }
 
 
@@ -255,25 +260,41 @@ img {
     gap: 25px;
 }
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: .5rem;
     border: 1px solid darkslateblue;
-    border-radius: 35px 12px 0 0;
+    border-radius: 7px 22px 5px 5px;
     padding: 7px;
     background: linear-gradient(-45deg, rgb(250, 250, 220,.2),rgb(124, 203, 230, .2));
     /* min-width: fit-content; */
+    box-shadow: 3px 5px 10px darkslategray;
+}
+
+.fa-solid, .fa-regular {
+    color: rgba(31, 2, 54, 0.785);
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    /* display: inline; */
+    /* z-index: 2; */
 }
 .card h3 {
+    /* z-index: 3; */
+    top: 0; 
     color: #023f52cb;
     background-color: #0441344f;
     background: linear-gradient(to right, #0441344f, #5a809215, #0441344f);
 
     border: 1px solid darkslateblue;
-    border-radius: 35px 12px 0 0;
+    border-bottom: double;
+    border-radius: 55px 12px 5px 5px;
     width: 230px;
 
-    padding: 20px;
+    padding: 15px;
+    padding-left: 25px;
     margin-bottom: 10px;
 }
 .card a {
