@@ -1,3 +1,7 @@
+:root {
+    --fa-color: rgba(69, 12, 116, 0.7), purple; 
+}
+
 
 
 /* @import url(https://fonts.bunny.net/css?family=aguafina-script:400);
@@ -15,7 +19,8 @@
 }
 
 body {
-    background: linear-gradient(-45deg, rgb(250, 250, 220, 0.6), rgb(124, 203, 230, .7)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
+    background: linear-gradient(90deg, rgb(250, 250, 220, 0.5), rgb(124, 203, 230, .7)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
+    
     height: 100vh;
     position: relative;
 }
@@ -33,23 +38,18 @@ header {
     padding-left: 15px;
     padding-top: 20px;
     border-bottom: .3px solid darkslateblue;
+    /* margin-bottom: 20px;
+    overflow: hidden; */
+    /* overflow: scroll; */
+    z-index: 10;
 
 }
-span {
-    font-family: 'Aguafina Script', handwriting;
-    /* font-family: 'Alex Brush', handwriting; */
-    /* font-family: 'Akaya Kanadaka', display; */
-
-    /* font-size: xx-large; */
-    color: rgb(4, 4, 71);
-    font-weight: bold;
-}
-
 
 header span {
-    /* font-family: 'Aguafina Script', handwriting; */
+    font-family: 'Aguafina Script', handwriting;
     font-size: xx-large;
-    /* color: rgb(4, 4, 71); */
+    font-weight: bold;
+    color: rgb(4, 4, 71);
     /* border: 1px solid rgb(0, 139, 139); */
 }
 
@@ -58,21 +58,25 @@ h1 {
     font-family: 'Aguafina Script', handwriting;
     font-family: 'Akronim', display;
     font-family: 'Akaya Kanadaka', display;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: 200%;
     display: block;
     position: fixed;
     top: 20px;
     left: 120px;
+    padding-right: 4px;
 
 }
 nav{
+    width: 100%;
     display: flex;
     gap: 1.2rem;
     align-items: end;
-    /* justify-content: end; */
+    justify-content: center;
     padding-bottom: .7rem;
-    margin-left: -50px;
-    border-bottom: .5px solid darkslateblue;
+    padding-right: 10px;
+    margin-left: -30px;
+    border-bottom: 1px solid darkslateblue;
 }
 nav li {
     list-style: none;
@@ -90,9 +94,7 @@ nav a {
     font-weight: 600;
     color: rgb(32, 19, 119);
     color: rgb(28, 34, 68);
-
     /* font-size: .9em; */
-
  }
 
 nav li:hover {
@@ -108,13 +110,13 @@ nav li:hover {
     border-radius: 5px;
 }
 .motto {
-    min-width: 120px;
+    max-width: 125px;
+    width: 100%;
     height: auto;
     /* border: 1px solid darkslategrey; */
     border-radius: 15px 20px 0 0;
     background-color: rgba(24, 74, 124, 0.212);
 
-    
     background-image: url(./src/learning-doing.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -123,8 +125,53 @@ nav li:hover {
     flex-direction: column;
     align-items: end;
     /* position: absolute; */
-    -bottom: -80px;
     /* right: 40px; */
+    margin-left: 30px;
+}
+@media screen and (max-width: 632px){
+    /* .motto {
+        width: 90px;
+    } */
+
+    h1{
+        font-size: 28px;
+    }
+    nav{
+        font-size: 1em;
+        
+        gap: 0.6rem;}
+    }
+@media screen and (max-width: 393px){
+    .motto {
+    width: 60px;   
+    }
+    h1{font-size: 22px;
+    padding-right: 14px;}
+    nav{
+        gap: 0.5rem;
+        font-size: .9em;}
+} 
+
+
+
+@media screen and (max-width:293px) {
+    .motto {
+        display: none;
+    }
+    h1 {
+        font-size: 18px;
+        padding-right: 14px;
+        color: rgba(2, 37, 2, 0.788);
+    }
+    nav{
+        font-size: .7em;
+        gap: 0.3rem;}
+
+    .card-template img:hover {
+        max-width: 100px;
+        height: 100px;
+    }
+
 }
 
 
@@ -132,16 +179,80 @@ main {
     /* margin-top: 170px; */
     /* margin top weg, bei table (absolute) angewandt. So klappt es, mit position relative hier und absolute bei table, exI, Konzept usw */
     position: relative;
-    top: 170px;
+    top: 115px;
     left: 15px;
     padding-right: 27px;
 }
 
+/* home
+--------------------------------- */
 /* .concept {
     background-image: ;
 } */
 
-/* AufgabenListe */
+/* (UIB-)Themen 
+-------*/
+.cards {
+    margin-top: 25px;
+    height: 87vh;
+    overflow: scroll;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    /* border: #551a8b; */
+    /* background: #6157697c; */
+    justify-content: center;
+    align-items: center;
+}
+.card-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    width: 320px;
+    padding: 25px;
+    border: 1px solid #551a8b;
+    border: 2px solid rgb(85, 26, 139, .6);
+    box-shadow: 3px 5px 10px rgba(10, 2, 19, 0.4);
+    border-radius: 20px 0 45px 20px;
+    background: rgba(71, 103, 110, 0.301);
+    position: relative;
+}
+.card-template img {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: #551a8b;
+    width: 140px;
+    height: auto;
+    transition: all;
+    transition-duration: 1.1s;
+}
+.card-template img:hover {
+    transform: scale(1.7) translateX(-24px) translateY(25px);
+    border-bottom-right-radius: 25px;
+    z-index: 4;
+}
+.card-template a{
+    text-decoration: none;
+
+}
+.card-template h4, span {
+    z-index: 3;
+}
+.card-white {
+    background: white;
+}
+.card-yl {
+    background: yellow;
+}
+
+
+
+
+/* AufgabenListe 
+---------------------------*/
 /* main relative gemacht, table absolute; sonst rutscht die tabelle unter den header beim scrollen. Nachteil: der Hintergrund scrollt jetzt nicht mehr (parallax effect).... */
 /* table {
     position: absolute;
@@ -166,19 +277,37 @@ table caption {
     
 }
 table {
-    /* margin: 0 auto; */
+    position: absolute;
+  top: 60px;
     width: 100%;
-    color: #010f29e0;
+    border-collapse: collapse;
 }
 table *{
     padding-left: 2px;
+    text-align: center;
+    text-decoration: none;
 }
 
 table, th {
     margin: 0 auto;
-    border-bottom: 1px solid darkslateblue;
-    /* column-gap: 100px; */
+    border-bottom: 2px solid darkslateblue;
+    /* column-gap: 100px; */}
+
+thead {
+    color: var(--fa-color);
+    /* funktioniert nicht...? */
+    color: rgba(69, 12, 116, 0.85);
 }
+td{
+    color: #010d25ec;
+
+}
+
+tbody tr td:nth-child(1) {
+    border-bottom: 1px solid darkslategray;
+    font-size: small;
+}
+
 tbody tr td:nth-child(2) {
     border-right: 1px solid darkslategray;
         background: #ffffff27; 
@@ -192,6 +321,7 @@ tbody tr td:nth-child(2) {
 td:nth-child(5)  {
     border-left: 1px solid darkslategray;
     background: #ffffff70; 
+    background-size: cover;
 
     /* background: rgba(124, 203, 230, .3); */
 
@@ -212,7 +342,8 @@ td img {
 }
 
 
-/* Pause */
+/* Pause 
+-----------------------*/
 img {    
     width: 15%;
     /* height: auto; */
@@ -243,7 +374,8 @@ img {
     align-items: end;
 
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1s;    color: rgba(69, 12, 116, 0.7);
+
 }
 .exI:hover {
     transform: scale(1.2);
@@ -266,16 +398,17 @@ img {
     gap: .5rem;
     border: 1px solid darkslateblue;
     border-radius: 7px 22px 5px 5px;
-    padding: 7px;
+    padding: 5px 7px 7px 7px;
+    /* padding-top: 0; */
     background: linear-gradient(-45deg, rgb(250, 250, 220,.2),rgb(124, 203, 230, .2));
     /* min-width: fit-content; */
     box-shadow: 3px 5px 10px darkslategray;
 }
 
 .fa-solid, .fa-regular {
-    color: rgba(31, 2, 54, 0.785);
+    color: rgba(69, 12, 116, 0.7);
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 5px;
 
     /* display: inline; */
@@ -301,4 +434,9 @@ img {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    color: #551a8b;
+}
+.card a:hover {
+    color: rgb(28, 34, 68);
+    text-decoration: underline;
 }

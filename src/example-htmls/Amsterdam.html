@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>picture element</title>
+		<style>
+			
+			body {
+				font-size: 16px;
+				font-family: monospace, sans-serif;
+				color: #415131;
+				background: #fff;
+				line-height: 1.4em;
+			}
+			article {
+				margin: 24px;
+				padding: 25px;
+				background-color: #b2f6f3;
+			}
+		
+			article h1 {
+				font-family:  cursive;
+				text-align: center;
+				font-size: 3.5em;
+				margin: 0 0 15px 0;
+				color: #5f8652;
+				line-height: .8em;
+			}			
+			article p {
+				margin: 0 0 20px 0;
+			}
+			article img {
+				margin: 5px 0 20px 0;
+				width: 100%;
+                border-radius: 15px;
+			}
+			@media screen and (max-width: 450px) {
+				article h1 { font-size: 2.8em; }
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<article>
+				<h1>Amsterdam canals</h1>
+                <!-- <picture>
+                    <source media="(max-width:450px)" srcset="./images/photo_small.jpg">
+                    <source media="(max-width:800px)" srcset="./images/photo_medium.jpg">
+                    <source media="(max-width:1200px)" srcset="./images/photo_large.jpg">
+                    <img src="./images/photo_medium.jpg" alt="A canal in Amsterdam.">
+                </picture> -->
+                <picture>
+                    <source media="(min-width:1200px)" srcset="https://picsum.photos/900/600">
+                    <source media="(min-width:800px)" srcset="https://picsum.photos/600/400">
+                    <source media="(min-width:450px)" srcset="https://picsum.photos/200/100">                
+                   
+                    <img src="https://picsum.photos/150/150" alt="A canal in Amsterdam.">
+                </picture>
+
+            
+				
+			 
+
+               
+				<p>Much of the Amsterdam canal system is the successful outcome of city planning. In the early part of the 17th century, with immigration rising, a comprehensive plan was put together, calling for four main, concentric half-circles of canals with their ends resting on the IJ Bay.</p>
+				<p>Known as the "grachtengordel", three of the canals are mostly for residential development, and a fourth, outer canal, Singelgracht, for purposes of defense and water management.</p>
+			</article>
+		</main>
+	</body>
+</html>
