@@ -26,7 +26,7 @@ body {
 header {
 
     background: linear-gradient(-45deg, rgb(250, 250, 220,.3),rgb(124, 203, 230, .3));
-    height: 115px;
+    height: 120px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -39,10 +39,6 @@ header {
     padding-top: 20px;
 
     border-bottom: .3px solid darkslateblue;
-    /* overflow: hidden; */
-    /* overflow: scroll; */
-    
-
 }
 
 header span {
@@ -81,10 +77,19 @@ ul li {
     /* transition-delay: 2s; */
     transition: all;
 }
+strong {
+    color: #035032;
+    background-color: rgba(228, 237, 245, 0.17);
+    border-radius: 5px 5px 0 0;
+
+    padding: 3px;
+
+    border-bottom: 2px double rgba(6, 70, 20, 0.699);
+
+}
 ul a {
     text-decoration: none;
     color: rgb(28, 34, 68);
-    color: rgb(32, 19, 119);
     font-weight: 400;
 }
  a:hover {
@@ -106,6 +111,7 @@ ul li:hover {
     transform: translateY(3px) translateX(-3px) scale(1.1);
     border-radius: 5px;
 }
+
 .motto {
     max-width: 125px;
     width: 100%;
@@ -198,9 +204,16 @@ main {
 
 /* home
 --------------------------------- */
-/* .concept {
-    background-image: ;
-} */
+.konzept {
+    margin-top: 40px;
+    outline: 1px solid red;
+    /* display: grid; */
+
+} 
+
+article ol li{
+    list-style-type: green;
+}
 
 /* (UIB-)Themen 
 -------*/
@@ -283,17 +296,16 @@ table caption {
     margin-bottom: 25px;
     margin-top: -30px;
     /* font-style: oblique; */
-    border: #0441344d;
-    border-style: double;
-    border-radius: 15px;
+    border-bottom: #050b6494;
+    /* border-radius: 15px; */
     background: #ffffff27; 
-    background: linear-gradient(to right, #0441344f, #5a809215, #0441344f);
+    background: linear-gradient(to right, rgba(135, 153, 142, 0.281), #5a809215, rgba(185, 202, 206, 0.3));
 
     
 }
 table {
     position: absolute;
-    top: 160px;
+    top: 200px;
     width: 100%;
     border-collapse: collapse;
 }
@@ -366,7 +378,7 @@ img {
     }
 
 .exI {
-    margin-top: 50px;
+    margin-top: 80px;
     /* hier auch wieder margin zu fixed header geben, sonst rutscht es durcheinander */
     /* fortschreitender Einsicht: top 170px left 15px EINMAL bei MAIN geben ;-) */
 
@@ -423,7 +435,7 @@ img {
     box-shadow: 3px 5px 10px darkslategray;
 }
 
-.fa-solid, .fa-regular {
+.card .fa-solid, .card .fa-regular {
     color: rgba(69, 12, 116, 0.7);
     position: absolute;
     top: 4px;
@@ -434,7 +446,6 @@ img {
 }
 .card h3 {
     /* z-index: 3; */
-    top: 0; 
     color: #023f52cb;
     background-color: #0441344f;
     background: linear-gradient(to right, #0441344f, #5a809215, #0441344f);
