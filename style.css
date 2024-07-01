@@ -56,8 +56,8 @@ header span {
 h1 {
     color: rgb(4, 4, 71);
     font-family: 'Aguafina Script', handwriting;
-    font-family: 'Akronim', display;
-    font-family: 'Akaya Kanadaka', display;
+    /* font-family: 'Akronim', display; */
+    /* font-family: 'Akaya Kanadaka', display; */
     /* font-size: 36px; */
     font-size: 200%;
     display: block;
@@ -68,15 +68,12 @@ h1 {
 
 }
 ul{
-    width: 100%;
     display: flex;
-    gap: 1.2rem;
+    column-gap: 1.2rem;
     align-items: end;
-    justify-content: center;
     padding-bottom: .7rem;
-    padding-right: 10px;
-    margin-left: -30px;
     border-bottom: 1px solid darkslateblue;
+    padding-right: 40px;
 }
 ul li {
     list-style: none;
@@ -128,6 +125,19 @@ ul li:hover {
     /* right: 40px; */
     margin-left: 30px;
 }
+@media screen and (min-width: 633px){
+    .motto {
+        width: 140px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+    nav{
+        font-size: 1em;
+        
+        gap: 0.6rem;}
+    }
 @media screen and (max-width: 632px){
     /* .motto {
         width: 90px;
@@ -136,18 +146,18 @@ ul li:hover {
     h1{
         font-size: 28px;
     }
-    nav{
+    ul{
         font-size: 1em;
         
         gap: 0.6rem;}
     }
-@media screen and (max-width: 393px){
+@media screen and (max-width: 434px){
     .motto {
     width: 60px;   
     }
     h1{font-size: 22px;
     padding-right: 14px;}
-    nav{
+    ul{
         gap: 0.5rem;
         font-size: .9em;}
 } 
@@ -163,7 +173,7 @@ ul li:hover {
         padding-right: 14px;
         color: rgba(2, 37, 2, 0.788);
     }
-    nav{
+    ul{
         font-size: .7em;
         gap: 0.3rem;}
 
