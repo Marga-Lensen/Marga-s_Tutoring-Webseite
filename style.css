@@ -408,12 +408,16 @@ img {
     /* height: auto; */
     margin-left: 75px;
     }
-
-.exI {
-    margin-top: 80px;
-    /* hier auch wieder margin zu fixed header geben, sonst rutscht es durcheinander */
+ /* hier auch wieder margin zu fixed header geben, sonst rutscht es durcheinander */
     /* fortschreitender Einsicht: top 170px left 15px EINMAL bei MAIN geben ;-) */
+.exercises {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
 
+.exI, .exII, .exIII {
+   
     border: 1px solid darkslateblue;
     border-radius: 15px;
     height: 300px;
@@ -436,12 +440,74 @@ img {
     transition-duration: 1s;    color: rgba(69, 12, 116, 0.7);
 
 }
+.exI {
+        background-image: url(./src/Pause-Übung-I_farblich.excalidraw.svg);
+}
 .exI:hover {
     transform: scale(1.2);
     translate: 40px;
+}
+.exII:hover {
+    transform: scale(1.2);
+}
+.exIII:hover {
+    transform: scale(1.2);
+    translate: -40px;
+}
+.play {
+    display: block;
+    background-color: var(--bg-steelblue);
+    margin: 0px auto;
+}
+.play button {
+    display: block;
+    border: none;
+    background-color: transparent;
+
+    margin: 0px auto;
+    margin-top: 40px;
+}
+.play button i{
+    
+    font-size: 20px;
+    color: darkgreen;
+    text-shadow: 1px 1px rgb(1, 12, 15);
+    margin: 0px auto;
 
 }
+.arbeiten {
+    border: 2px solid green;
+    font-size: 1px;
+    width: 0px;
+    margin: 0px auto;
+}
 
+.arbeiten:hover {
+    font-size: 20px;
+    color: darkgreen;
+    border: 2px solid green;
+    border-radius: 40px;
+    text-shadow: 1px 1px rgb(1, 12, 15);
+    background-color: var(--bg-steelblue);
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tenor-gif-embed {
+    border-radius: 40px;
+    width: 350px;
+
+}
+/* .typing {
+    border: 2px solid orange;
+    border-radius: 40px;
+    width: 300px;
+    height: auto;
+} */
 
 /* links */
 .categories {
