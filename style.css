@@ -26,8 +26,10 @@ body {
     /* position: relative; */
 }
 header {
+    /* z-index: 10; */
+    /* background: linear-gradient(-45deg, rgb(250, 250, 220,.3),rgb(124, 203, 230, .3)); */
+    background: linear-gradient(90deg, rgba(226, 228, 219, 0.66),rgba(138, 181, 196, 0.719)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
 
-    background: linear-gradient(-45deg, rgb(250, 250, 220,.3),rgb(124, 203, 230, .3));
     height: 120px;
     width: 100%;
     position: sticky;
@@ -39,7 +41,6 @@ header {
     padding-right: 20px;
     padding-left: 15px;
     padding-top: 20px;
-
     border-bottom: .3px solid darkslateblue;
 }
 
@@ -63,7 +64,6 @@ h1 {
     top: 20px;
     left: 120px;
     padding-right: 4px;
-
 }
 header ul{
     display: flex;
@@ -83,11 +83,8 @@ strong {
     color: #035032;
     background-color: rgba(228, 237, 245, 0.17);
     border-radius: 5px 5px 0 0;
-
     padding: 3px;
-
     border-bottom: 2px double rgba(6, 70, 20, 0.699);
-
 }
 header ul a {
     text-decoration: none;
@@ -133,30 +130,27 @@ header ul li:hover {
     /* right: 40px; */
     margin-left: 30px;
 }
+/* media queries */
 @media screen and (min-width: 633px){
     .motto {
         width: 140px;
     }
-
     h1{
         font-size: 36px;
     }
     nav{
         font-size: 1em;
-        
         gap: 0.6rem;}
     }
 @media screen and (max-width: 632px){
     /* .motto {
         width: 90px;
     } */
-
     h1{
         font-size: 28px;
     }
     ul{
         font-size: 1em;
-        
         gap: 0.6rem;}
     }
 @media screen and (max-width: 434px){
@@ -168,10 +162,7 @@ header ul li:hover {
     ul{
         gap: 0.5rem;
         font-size: .9em;}
-} 
-
-
-
+    } 
 @media screen and (max-width:293px) {
     .motto {
         display: none;
@@ -184,12 +175,10 @@ header ul li:hover {
     ul{
         font-size: .7em;
         gap: 0.3rem;}
-
     .card-template img:hover {
         max-width: 100px;
         height: 100px;
     }
-
 }
 
 
@@ -209,6 +198,7 @@ main {
 .grid {
     margin-top: 40px;
     padding-right: 20px;
+    padding-left: 20px;
     gap: 7px;
     /* outline: 1px solid red; */
     display: grid;
@@ -231,7 +221,7 @@ main {
 .grid article {
     background: #010f2963;
     color: white;
-    padding: 15px;
+    padding: 25px;
 }
 .vorbereitung {
     grid-area: 1/1/4/2;
@@ -239,8 +229,10 @@ main {
 .bedingungen {
     grid-area: 2/2/4/3;
 }
-.konzept article ul li{
-    list-style-type: green;
+.grid ul li{
+    /* list-style-image: url(./src/logos/Bildschirmfoto\ vom\ 2024-06-27\ 12-52-34.png);
+    list-style-image: url(./src/logos/Bildschirmfoto\ vom\ 2024-07-02\ 10-54-51.png); */
+    list-style: circle;
 }
 .nachbereitung {
     grid-area: 1/3/4/4;
@@ -324,17 +316,21 @@ main {
 } */
  
 table caption {
-    color: #010f29e0;
+    color: lightblue;
     text-shadow: #010913a8;
-    font-size: larger;
-    font-weight: 600;
+    /* font-size: larger; */
+    font-weight: 400;
     margin-bottom: 25px;
     margin-top: -30px;
     /* font-style: oblique; */
     border-bottom: #050b6494;
     /* border-radius: 15px; */
     background: #ffffff27; 
-    background: linear-gradient(to right, rgba(135, 153, 142, 0.281), #5a809215, rgba(185, 202, 206, 0.3));
+    background: linear-gradient(to right, lightgrey, slateblue
+    lightslategrey);
+    background: var(--bg-steelblue);
+    padding: 12px;
+
 
     
 }
@@ -342,7 +338,6 @@ table {
     position: absolute;
     top: 200px;
     width: 100%;
-    border-collapse: collapse;
 }
 table *{
     padding-left: 2px;
@@ -357,8 +352,8 @@ table, th {
 
 thead {
     color: var(--fa-color);
-    /* funktioniert nicht...? */
-    color: rgba(69, 12, 116, 0.85);
+    color: rgba(1, 13, 46, 0.85);
+    padding: 12px;
 }
 td{
     color: #010d25ec;
@@ -368,6 +363,8 @@ td{
 tbody tr td:nth-child(1) {
     border-bottom: 1px solid darkslategray;
     font-size: small;
+    border-collapse: collapse;
+
 }
 
 tbody tr td:nth-child(2) {
@@ -515,6 +512,17 @@ img {
     font-family: 'Aguafina Script', handwriting;
 }
 
+
+
+/* back to top */
+.top {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+}
+
+/* footer */
+
 footer {
     background: hwb(220 1% 77% / 0.658);
     background-image: linear-gradient(rgba(77, 85, 94, 0.6) , rgba(84, 161, 161, 0.589)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
@@ -527,6 +535,7 @@ footer {
     justify-content: space-between;
     padding: 15px;
     align-items: center;
+    z-index: 10;
 }
 footer span {
     font-family: 'Aguafina Script', handwriting;
@@ -546,11 +555,24 @@ footer a{
     color: var(--fa-color);
     color: lightcyan;
     font-weight: bold;
+    padding: 5px;
+
+}
+footer a:hover {
+    color: orange;
+    background-color: rgba(84, 110, 110, 0.384);
+    border: darkslategrey;
 }
 footer button {
     padding: 4px;
     background: var(--bg-steelblue);
     border-radius: 5px;
-    border-color: slategray;
+    border-color: darkslategray;
     color: orange;
+}
+footer button:hover {
+    transform: scale(1.2);
+    background: rgba(112, 128, 144, 0.371);
+    color: rgb(10, 10, 54);
+    border: 1px solid orange;
 }
