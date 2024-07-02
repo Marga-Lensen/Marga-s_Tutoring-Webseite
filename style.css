@@ -429,31 +429,45 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
 
-    padding-top: 270px;
-    padding-left: 55px;
+    padding: 15px;
 
     box-shadow: 2px 3px 5px rgba(138, 78, 78, 0.5);
-
-    align-items: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 
     transition-property: all;
     transition-duration: 1s;    color: rgba(69, 12, 116, 0.7);
 
 }
 .exI {
-        background-image: url(./src/Pause-Übung-I_farblich.excalidraw.svg);
+    background-image: url(./src/pause/Pause-Übung-I-farblich.png);
 }
 .exI:hover {
     transform: scale(1.2);
     translate: 40px;
 }
+.exII {
+    background-image: url(./src/pause/beaming-face-with-smiling-eyes-emoji-icon.svg);
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px;
+    padding: 20px;
+}
 .exII:hover {
     transform: scale(1.2);
+    background-image: url(./src/pause/face-without-mouth-emoji-icon.svg);
+}
+.exIII {
+    background-image: url(./src/pause/Pause-Übung-III-farblich.excalidraw.svg);
 }
 .exIII:hover {
     transform: scale(1.2);
     translate: -40px;
 }
+
 .play {
     display: block;
     background-color: var(--bg-steelblue);
