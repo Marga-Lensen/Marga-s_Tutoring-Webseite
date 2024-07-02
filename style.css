@@ -1,5 +1,7 @@
 :root {
     --fa-color: rgba(69, 12, 116, 0.7); 
+    --bg-steelblue: #010f2963;
+
 }
 
 
@@ -8,7 +10,7 @@
 @import url(https://fonts.bunny.net/css?family=aguafina-script:400|akaya-kanadaka:400|akronim:400|alex-brush:400);
 
 *{
-    /* padding: 0; */
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -41,7 +43,7 @@ header {
     border-bottom: .3px solid darkslateblue;
 }
 
-header span {
+header span{
     font-family: 'Aguafina Script', handwriting;
     font-size: xx-large;
     font-weight: bold;
@@ -63,7 +65,7 @@ h1 {
     padding-right: 4px;
 
 }
-ul{
+header ul{
     display: flex;
     column-gap: 1.2rem;
     align-items: end;
@@ -71,9 +73,9 @@ ul{
     border-bottom: 1px solid darkslateblue;
     padding-right: 40px;
 }
-ul li {
+header ul li {
     list-style: none;
-    /* transition-duration: .6s; */
+    transition-duration: .6s; 
     /* transition-delay: 2s; */
     transition: all;
 }
@@ -87,7 +89,7 @@ strong {
     border-bottom: 2px double rgba(6, 70, 20, 0.699);
 
 }
-ul a {
+header ul a {
     text-decoration: none;
     color: rgb(28, 34, 68);
     font-weight: 400;
@@ -99,7 +101,7 @@ ul a {
     /* font-size: .9em; */
  }
 
-ul li:hover {
+header ul li:hover {
     background-color: rgba(228, 237, 245, 0.27);
     border-left: 1px solid darkslateblue;
     border-bottom: 1px solid darkslateblue;
@@ -204,19 +206,52 @@ main {
 
 /* home
 --------------------------------- */
-.konzept {
+.grid {
     margin-top: 40px;
-    outline: 1px solid red;
-    /* display: grid; */
-
-} 
-
-article ol li{
+    padding-right: 20px;
+    gap: 7px;
+    /* outline: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 150px 1fr 1fr;
+}
+/* .grid article:nth-child(2n){
+    background: olive ;
+} */
+.idee {
+    /* outline: 3px solid orange; */
+    grid-area: 1/2/2/3;
+    padding-left: 50px;
+   /* text-align: center; */
+    /* background: rgb(250, 128, 114, .4); */
+}
+.idee img {
+    width: 150px;
+}
+.grid article {
+    background: #010f2963;
+    color: white;
+    padding: 15px;
+}
+.vorbereitung {
+    grid-area: 1/1/4/2;
+}
+.bedingungen {
+    grid-area: 2/2/4/3;
+}
+.konzept article ul li{
     list-style-type: green;
+}
+.nachbereitung {
+    grid-area: 1/3/4/4;
+}
+.grid h4 {
+    color: orange;
+    padding-bottom: 10px;
 }
 
 /* (UIB-)Themen 
--------*/
+-----------------------------*/
 .cards {
     padding-top: 20px;
 
@@ -478,4 +513,44 @@ img {
 }
 .card span {
     font-family: 'Aguafina Script', handwriting;
+}
+
+footer {
+    background: hwb(220 1% 77% / 0.658);
+    background-image: linear-gradient(rgba(77, 85, 94, 0.6) , rgba(84, 161, 161, 0.589)), url(./src/pawel-czerwinski-sE97eb0WhGI-unsplash.jpg);
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    height: 45px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+footer span {
+    font-family: 'Aguafina Script', handwriting;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 1px 2px black;
+    color: lightblue;
+    /* border: 1px solid rgb(0, 139, 139); */
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--fa-color);
+    color: lightcyan;
+    font-weight: bold;
+}
+footer button {
+    padding: 4px;
+    background: var(--bg-steelblue);
+    border-radius: 5px;
+    border-color: slategray;
+    color: orange;
 }
