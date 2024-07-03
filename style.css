@@ -153,7 +153,9 @@ header ul li:hover {
         font-size: 1em;
         gap: 0.6rem;}
     }
-@media screen and (max-width: 434px){
+
+    /* 434px war passend, aber 480 ist eine standard wert, oder?.... */
+@media screen and (max-width: 480px){
     .motto {
     width: 60px;   
     }
@@ -184,6 +186,8 @@ header ul li:hover {
 
 main {
     box-sizing: border-box;
+    /* height: 80vh; */
+
     /* margin-top: 170px; */
     /* margin top weg, bei table (absolute) angewandt. So klappt es, mit position relative hier und absolute bei table, exI, Konzept usw */
     /* position: relative; */
@@ -222,7 +226,7 @@ main {
     background: #010f2963;
     color: white;
     padding: 25px;
-}
+}translat
 .vorbereitung {
     grid-area: 1/1/4/2;
 }
@@ -403,6 +407,16 @@ td img {
 
 /* Pause 
 -----------------------*/
+.meditation {
+    background: var(--bg-steelblue);
+    width: 100vw;
+}
+
+.meditation video {    
+    width: 40%;
+    /* height: auto; */
+    margin-left: 30vw;
+    }
 img {    
     width: 15%;
     /* height: auto; */
@@ -471,6 +485,7 @@ img {
 .play {
     display: block;
     background-color: var(--bg-steelblue);
+    padding: 2px;
     margin: 0px auto;
 }
 .play button {
@@ -479,11 +494,12 @@ img {
     background-color: transparent;
 
     margin: 0px auto;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .play button i{
     
-    font-size: 20px;
+    font-size: 20px;            <div class="play"><button><i class="fa-solid fa-play"></i></button></div>
+
     color: darkgreen;
     text-shadow: 1px 1px rgb(1, 12, 15);
     margin: 0px auto;
@@ -497,13 +513,14 @@ img {
 }
 
 .arbeiten:hover {
+    transform: translateY(-30px);
     font-size: 20px;
     color: darkgreen;
     border: 2px solid green;
     border-radius: 40px;
     text-shadow: 1px 1px rgb(1, 12, 15);
     background-color: var(--bg-steelblue);
-    width: 400px;
+    width: 50vw;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -595,10 +612,15 @@ img {
 
 
 /* back to top */
+#top{
+    display: inline-block;
+}
 .top {
     position: absolute;
-    bottom: 70px;
+    bottom: 8vh;
     right: 20px;
+    right: 5vw;
+    z-index: 8;
 }
 
 /* footer */
