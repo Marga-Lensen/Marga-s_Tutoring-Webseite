@@ -128,18 +128,18 @@ header ul li:hover {
     margin-left: 30px;
 }
 /* media queries */
-@media screen and (min-width: 633px){
+@media screen and (min-width: 769px){
     .motto {
         width: 140px;
     }
     h1{
         font-size: 36px;
     }
-    nav{
+    header{
         font-size: 1em;
-        gap: 0.6rem;}
+        gap: 1.4rem;}
     }
-@media screen and (max-width: 632px){
+@media screen and (max-width: 768px){
     /* .motto {
         width: 90px;
     } */
@@ -173,7 +173,7 @@ header ul li:hover {
     }
     ul{
         font-size: .7em;
-        gap: 0.3rem;}
+        gap: 0.5rem;}
     .card-template img:hover {
         max-width: 100px;
         height: 100px;
@@ -184,7 +184,7 @@ header ul li:hover {
 main {
     box-sizing: border-box;
     /* height: 80vh; */
-
+    margin-bottom: 10vh;
     margin-top: 120px;
     /* margin top weg, bei table (absolute) angewandt. So klappt es, mit position relative hier und absolute bei table, exI, Konzept usw */
     position: relative;
@@ -249,23 +249,20 @@ main {
 #top {
     /* /* position: absolute;
     top: 30px; */
-    background: var(--bg-steelblue);
+    background-color: var(--bg-steelblue);
     margin-top: 25px;
     padding: 1rem;
     text-align: center;
+    color: lightblue;
+    text-shadow: #010913a8;
+    font-size: medium;
 }
 .cards {
-    
-
     margin-top: 2rem;
-    height: 87vh;
-    /* overflow: scroll; */
+    /* height: 87vh; */
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-
-    /* border: #551a8b; */
-    /* background: #6157697c; */
     justify-content: center;
     align-items: center;
 }
@@ -313,16 +310,12 @@ main {
 }
 
 
-
-
 /* AufgabenListe 
 ---------------------------*/
 /* main relative gemacht, table absolute; sonst rutscht die tabelle unter den header beim scrollen. Nachteil: der Hintergrund scrollt jetzt nicht mehr (parallax effect).... */
 /* table {
     position: absolute;
-
     fortschreitender Einsicht: table braucht nicht absolute. Einfach bei MAIN, EINMAL position top 170px left 15px gegeben. Dann fängt der Inhalt auf jeder Seite unter dem Header - mit Luft - an.
-
 } */
  
 table caption {
@@ -331,26 +324,17 @@ table caption {
     /* font-size: larger; */
     font-weight: 400;
     margin-bottom: 25px;
-    margin-top: -30px;
     /* font-style: oblique; */
     border-bottom: #050b6494;
-    /* border-radius: 15px; */
-    background: #ffffff27; 
-    background: linear-gradient(to right, lightgrey, slateblue
-    lightslategrey);
     background: var(--bg-steelblue);
     padding: 12px;
-
-
-    
 }
 table {
     position: absolute;
-    top: 200px;
+    top: 00px;
     width: 100%;
 }
 table *{
-    padding-left: 2px;
     text-align: center;
     text-decoration: none;
 }
@@ -358,7 +342,7 @@ table *{
 table, th {
     margin: 0 auto;
     border-bottom: 2px solid darkslateblue;
-    /* column-gap: 100px; */}
+    }
 
 thead {
     color: var(--fa-color);
@@ -367,41 +351,27 @@ thead {
 }
 td{
     color: #010d25ec;
-
 }
 
 tbody tr td:nth-child(1) {
     border-bottom: 1px solid darkslategray;
     font-size: small;
     border-collapse: collapse;
-
 }
 
 tbody tr td:nth-child(2) {
     border-right: 1px solid darkslategray;
-        background: #ffffff27; 
-
+    background: #ffffff27; 
     /* border-bottom: 1px solid darkslategray; */
     font-weight: bold;
     font-size: small;
-
     padding: auto 0;
 }
 td:nth-child(5)  {
     border-left: 1px solid darkslategray;
     background: #ffffff70; 
     background-size: cover;
-
-    /* background: rgba(124, 203, 230, .3); */
-
-    /* border-bottom: 1px solid darkslategray; */
-    /* max-height: 5rem; */
-    /* max-width: fit-content; */
-
-    /* padding: 0;
-    max-width: 200px;
-    min-height: 4rem; */
-
+    text-align: start;
     /* ich kriege die Spalte nicht formattiert, und die Bilder größer */
     /* object-fit: contain; */
 }
@@ -409,7 +379,6 @@ td img {
     height: 50px;
     width: auto;
 }
-
 
 /* Pause 
 -----------------------*/
@@ -419,47 +388,50 @@ td img {
 }
 
 .meditation video {    
-    width: 40%;
+    width: 33%;
     /* height: auto; */
-    margin-left: 30vw;
+    margin: auto 33vw;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px var(--bg-steelblue);
     }
+
 img {    
     width: 15%;
     /* height: auto; */
     margin-left: 75px;
     }
- /* hier auch wieder margin zu fixed header geben, sonst rutscht es durcheinander */
-    /* fortschreitender Einsicht: top 170px left 15px EINMAL bei MAIN geben ;-) */
+
 .exercises {
     display: flex;
-    justify-content: space-around;
-    margin: 50px auto;
+    justify-content: center;
+    gap: 10vw;
+    margin: 30px auto;
 }
 
 .exI, .exII, .exIII {
-   
-    border: 1px solid darkslateblue;
+    border: 1.5px solid darkslateblue;
     border-radius: 15px;
-    height: 300px;
-    width: 200px;
+    height: 200px;
+    width: 120px;
     box-sizing: border-box;
+    padding: 5px;
 
     background-color: white;
     background-image: url(./src/Pause-Übung-I_farblich.excalidraw.svg);
     background-size: contain;
     background-repeat: no-repeat;
 
-    padding: 15px;
-
-    box-shadow: 2px 3px 5px rgba(138, 78, 78, 0.5);
+    box-shadow: 2px 3px 5px var(--bg-steelblue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
 
     transition-property: all;
-    transition-duration: 1s;    color: rgba(69, 12, 116, 0.7);
-
+    transition-duration: 1s;    
+    color: var(--bg-steelblue);
+    text-shadow: 1px 1px rgba(8, 8, 36, 0.438);
 }
 .exI {
     background-image: url(./src/pause/Pause-Übung-I-farblich.png);
@@ -488,60 +460,43 @@ img {
     translate: -40px;
 }
 
-.play {
-    display: block;
-    background-color: var(--bg-steelblue);
-    padding: 2px;
-    margin: 0px auto;
-}
 .play button {
-    display: block;
+    display: inline-block;
     border: none;
-    background-color: transparent;
-
-    margin: 0px auto;
-    margin-top: 30px;
+    background-color: var(--bg-steelblue);
+    width: 10vw;
+    margin: 0px 45vw;
+    margin-top: 15px;
 }
 .play button i{
     font-size: 20px;            
     color: darkgreen;
     text-shadow: 1px 1px rgb(1, 12, 15);
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 .arbeiten {
-    border: 2px solid green;
-    font-size: 1px;
-    width: 0px;
+    border: 5px solid rgb(201, 198, 15);
+    font-size: 0px;
+    width: 2vw;
+    height: 4px;
     margin: 0px auto;
 }
 
 .arbeiten:hover {
-    transform: translateY(-30px);
-    font-size: 20px;
-    color: darkgreen;
-    border: 2px solid green;
+    transform: translateY(-250px) scale(1.3);
+    font-size: 16px;
+    color: lightcyan;
+    border: 1px solid lightcyan;
     border-radius: 40px;
     text-shadow: 1px 1px rgb(1, 12, 15);
     background-color: var(--bg-steelblue);
     width: 50vw;
     height: auto;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.tenor-gif-embed {
-    border-radius: 40px;
-    width: 350px;
-
-}
-/* .typing {
-    border: 2px solid orange;
-    border-radius: 40px;
-    width: 300px;
-    height: auto;
-} */
 
 /* links */
 .categories {
