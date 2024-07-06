@@ -1,8 +1,19 @@
-<h1>Marga's Tutoring 🤓</h1>
+<h1> Marga's Tutoring 🤓</h1>
 
-hier findet ihr die Webseite (home = Übungsaufgaben-Seite).
+hier findet ihr die Webseite (https://marga-lensen.github.io/Marga-s_Tutoring/)(home = Übungsaufgaben-Seite).
 
-die Liste der **_Übungsaufgaben_** (https://marga-lensen.github.io/Marga-s_Tutoring/index.html) wird ständig aktualisiert (neueste oben) mit besonders relevanten und/oder kniffigen Aufgaben. Hier ist **input aus der Klasse** erwünscht! 
+- 📝 die Liste der **_Übungsaufgaben_** (https://marga-lensen.github.io/Marga-s_Tutoring/index.html) wird ständig aktualisiert (neueste oben) mit besonders relevanten und/oder kniffigen Aufgaben. Hier ist **input aus der Klasse** erwünscht! 
 
-Auf der Seite **_Links_** (https://marga-lensen.github.io/Marga-s_Tutoring/links.html) findet ihr die wichtigsten Links, die im Unterricht, oder zusätzlich im Slack, geteilt werden. Ich werde die Seite sehr gut pflegen, und ich checke alle Links auf Relevanz. 
+- 🔗 Auf der Seite **_Links_** (https://marga-lensen.github.io/Marga-s_Tutoring/links.html) findet ihr die wichtigsten Links, die im Unterricht, oder zusätzlich im Slack, geteilt werden. Ich werde die Seite sehr gut pflegen, und ich checke alle Links auf Relevanz. 
 Falls ein deiner Links nicht aufgelistet wird, oder dir noch etwas fehlt, sag mir bitte Bescheid. Ich werde die Vorschläge aus der Gruppe berücksichtigen.
+
+- Außerdem habe ich ein paar Vorschläge zur ⏸️ Pause gemacht, auf der **_Pause_**-Seite (https://marga-lensen.github.io/Marga-s_Tutoring/Pause.html) findet ihr ein meditatives Video, das man auf Dauerschleife abspielen kann (Vollbildmodus), um sich zu beruhigen.
+Zur Vorbeugung von körperlichen Beschwerden durch das lange Sitzen habe ich dreierlei Übungen dargestellt; zwei für den Nacken/Rückenbereich und eine "face yoga" Übung 😉. Unten steht ein lustiges Video zum Anspornen, wieder an die Arbeit zu gehen 😅
+
+🙏 Ich hoffe, dass die Infos hilfreich für euch ist, und mittelfristig immer besser werden kann. 👍️
+
+💬 Eur Feedback ist willkommen! 👂️
+
+👍️ Viel Spaß und Erfolg! 🏆️
+
+
