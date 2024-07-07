@@ -1,4 +1,4 @@
-![alt text](<src/logos/Bildschirmfoto vom 2024-06-27 12-52-34.png 50%>) ![](https://komarev.com/ghpvc/?username=marga-lensen&color=fbbf24)
+![alt text](<src/logos/Bildschirmfoto vom 2024-06-27 12-52-34.png>) ![](https://komarev.com/ghpvc/?username=marga-lensen&color=fbbf24)
 
 <h1> Marga's Tutoring 🤓</h1>
 
