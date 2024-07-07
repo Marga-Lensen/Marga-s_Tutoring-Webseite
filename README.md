@@ -1,4 +1,6 @@
-![alt text](<src/logos/Bildschirmfoto vom 2024-06-27 12-52-34.png>) <h1> Marga's Tutoring 🤓</h1>
+![alt text](<src/logos/Bildschirmfoto vom 2024-06-27 12-52-34.png 50%>) ![](https://komarev.com/ghpvc/?username=marga-lensen&color=fbbf24)
+
+<h1> Marga's Tutoring 🤓</h1>
 
 
 hier findet ihr die Webseite https://marga-lensen.github.io/Marga-s_Tutoring/  (*home = Übungsaufgaben-Seite*).
