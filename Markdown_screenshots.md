@@ -1,4 +1,4 @@
-# Markdown Tipps & Tricks I - screenshots einfugen
+# Markdown Tipps & Tricks I - screenshots einfuegen
 
 ## Vorgehensweisen:
 ##### (Anwendungsbeispiel: Webseite checken mittels https://pagespeed.web.dev/)
