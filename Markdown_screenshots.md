@@ -13,6 +13,8 @@
  screenshot DIREKT MIT 'Strg + V' EINFÜGEN! 😎
  ```
 
+![alt text](image-1.png)
+
  - Der Inhalt (das screenshot: `![alt text](image-2.png)`) wird Außerdem automatisch gespeichert!😀
  - die screenshots image-n.png kann man einfach verschieben (`drag & drop `zum Ordner `readme`), und von dort einfach erneut in die Markdown Datei einfügen (wieder mit `drag & drop`; `Shift` drucken um es zu platzieren); es passt seinen Pfad automatisch an ( `![alt text](src/readme/image-2.png)` )!🤓
 
