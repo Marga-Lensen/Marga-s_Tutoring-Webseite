@@ -5,9 +5,12 @@
 - transition w :hover doesn't work well on Handy
 
 #### Links, Info
-- 
-- 
-- 
+- [codepen](https://codepen.io/rishabhp/pen/NNNjNj); touch-action options
+
+- [piclumen](https://www.piclumen.com/): example of wonderful (AI) website, which works horribly badly on Handy
+
+- [ mobile first](https://kulturbanause.de/blog/responsive-webdesign-und-mobile-first/)
+#
 #### touch- in JavaScript...(?); problem: "freezing"; "sticky hover"
 
 #### Addition to the CSS:
